@@ -1,1 +1,26 @@
-# video
+[video.html](https://github.com/user-attachments/files/23560103/video.html)
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>B站视频播放示例</title>
+  <style>
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; font-family: sans-serif; }
+    .video-wrapper { position: relative; width: 100%; max-width: 800px; padding-bottom: 56.25%; /* 16:9 比例 */ }
+    .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+    h1 { margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <h1>我的 B 站视频</h1>
+  <div class="video-wrapper">
+    <iframe 
+      src="https://player.bilibili.com/player.html?bvid=BV1zBC3BMECp&autoplay=0&danmaku=1" 
+      allowfullscreen="true" 
+      scrolling="no" 
+      frameborder="no">
+    </iframe>
+  </div>
+</body>
+</html>
